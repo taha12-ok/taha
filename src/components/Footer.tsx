@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faVercel } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -49,7 +49,9 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Vercel"
               className="text-gray-400 hover:text-white transition duration-300">
-              <FontAwesomeIcon icon={faVercel} size="lg" />
+              {/* Optional: use a generic link icon or text */}
+              {/* <FontAwesomeIcon icon={faLink} size="lg" /> */}
+              <span className="text-gray-400 hover:text-white transition duration-300">Vercel</span>
             </a>
             <a
               href="https://www.linkedin.com/in/taha-shabbir-86367525a/"
