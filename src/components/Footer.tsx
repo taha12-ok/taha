@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiVercel } from "react-icons/si";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faVercel } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -41,7 +41,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="GitHub"
               className="text-gray-400 hover:text-white transition duration-300">
-              <FaGithub size={20} />
+              <FontAwesomeIcon icon={faGithub} size="lg" />
             </a>
             <a
               href="https://vercel.com/taha-shabbirs-projects"
@@ -49,7 +49,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Vercel"
               className="text-gray-400 hover:text-white transition duration-300">
-              <SiVercel size={20} />
+              <FontAwesomeIcon icon={faVercel} size="lg" />
             </a>
             <a
               href="https://www.linkedin.com/in/taha-shabbir-86367525a/"
@@ -57,7 +57,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="text-gray-400 hover:text-white transition duration-300">
-              <FaLinkedin size={20} />
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
           </div>
         </div>
