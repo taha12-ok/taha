@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaStreetView } from "react-icons/fa6";
 
 function MainBlog() {
   return (
@@ -80,26 +79,27 @@ function MainBlog() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade">
-          </iframe>
+        </iframe>
         <div className="absolute inset-0 bg-orange-500 opacity-70 z-5"></div>
         <div className="container mx-auto px-4 flex flex-col items-center justify-center m-10 relative z-5">
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl font-semibold mb-6">Join the Conversation</h1>
             <p className="text-lg md:text-normal mb-6">Engage with the community by leaving comments and sharing your thoughts on our blog posts.</p>
             <Link href="/blog">
-             <button className="bg-gray-700 text-gray-100 font-semibold px-6 py-3 rounded-md m-10 hover:text-yellow-500">
+              <button className="bg-gray-700 text-gray-100 font-semibold px-6 py-3 rounded-md m-10 hover:text-yellow-500">
                 View My Blog
-             </button>
+              </button>
             </Link>
             <div className="relative gap-10 flex inset-0 m-2 sm:m-6 md:m-8 lg:m-10 justify-center z-5">
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
-              <FaStreetView size={58} className="text-gray-300 m-2" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" className="text-gray-300 m-2" viewBox="0 0 24 24">
+                <path d="M12 2C10.89 2 10 2.89 10 4c0 .39.11.76.29 1.08l-4.31 4.31a1.5 1.5 0 000 2.12L12 21l6.02-6.02a1.5 1.5 0 000-2.12l-4.31-4.31c.18-.32.29-.69.29-1.08 0-1.11-.89-2-2-2zm0 16.5l-4.5-4.5 1.5-1.5 3 3 7.5-7.5 1.5 1.5-9 9zM10 4a2 2 0 114 0 2 2 0 01-4 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" className="text-gray-300 m-2" viewBox="0 0 24 24">
+                <path d="M12 2C10.89 2 10 2.89 10 4c0 .39.11.76.29 1.08l-4.31 4.31a1.5 1.5 0 000 2.12L12 21l6.02-6.02a1.5 1.5 0 000-2.12l-4.31-4.31c.18-.32.29-.69.29-1.08 0-1.11-.89-2-2-2zm0 16.5l-4.5-4.5 1.5-1.5 3 3 7.5-7.5 1.5 1.5-9 9zM10 4a2 2 0 114 0 2 2 0 01-4 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" className="text-gray-300 m-2" viewBox="0 0 24 24">
+                <path d="M12 2C10.89 2 10 2.89 10 4c0 .39.11.76.29 1.08l-4.31 4.31a1.5 1.5 0 000 2.12L12 21l6.02-6.02a1.5 1.5 0 000-2.12l-4.31-4.31c.18-.32.29-.69.29-1.08 0-1.11-.89-2-2-2zm0 16.5l-4.5-4.5 1.5-1.5 3 3 7.5-7.5 1.5 1.5-9 9zM10 4a2 2 0 114 0 2 2 0 01-4 0z" />
+              </svg>
             </div>
           </div>
         </div>
@@ -107,4 +107,5 @@ function MainBlog() {
     </>
   );
 }
+
 export default MainBlog;
